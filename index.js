@@ -8,14 +8,19 @@ const cors = require('cors')
 
 const app = express()
 const PORT = process.env.PORT || 4000
-const corsOrigin = 
-[
-  "http://localhost:3000",
-  "http://localhost:5173",
-  "https://mamarecipe-fe-naufan.vercel.app",
-  "https://mama-recipe-food.vercel.app",
-  "https://recipe-fwm19.vercel.app"
-]
+// const corsOrigin = 
+// [
+//   "http://localhost:3000",
+//   "http://localhost:5173",
+//   "https://mamarecipe-fe-naufan.vercel.app",
+//   "https://mama-recipe-food.vercel.app",
+//   "https://recipe-fwm19.vercel.app"
+// ]
+
+
+  const corsOrigin = function (origin, callback) {
+      callback(null, true)
+  }
 
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
