@@ -24,7 +24,7 @@ To get a local copy up and running, follow these simple steps.
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/nizuma666/recipe-next-js.git
+    git clone https://github.com/nizuma666/pijar-mama-recipe.git
     ```
 2. Navigate to the project directory:
     ```bash
